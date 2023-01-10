@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useMarvelContext } from '../context/MarvelContext'
 import CharacterCard from './CharacterCard'
 
 const CharacterList = () => {
 
   const{allCharacters} = useMarvelContext()
+
 
   return (
     <>
