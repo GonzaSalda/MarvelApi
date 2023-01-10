@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useMarvelContext } from '../context/MarvelContext'
 import CharacterCard from './CharacterCard'
 
 const CharacterList = () => {
 
-  const{allCharacters} = useMarvelContext()
+  const{allCharactersList} = useMarvelContext()
 
 
   return (
     <>
     
       <div className='flex gap-5 mb-6 justify-center items-center flex-wrap'>
-        {allCharacters.map((item) =>(
+        {allCharactersList.map((item) =>(
           <CharacterCard key={item.id} item={item}/>
         ))}
       </div>

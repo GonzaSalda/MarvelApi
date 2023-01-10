@@ -1,29 +1,32 @@
-import React  from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 import { useMarvelContext } from '../context/MarvelContext'
 
 const SearchPage = () => {
 
-    const location = useLocation()
+  const location = useLocation()
 
-    const {allCharacters} = useMarvelContext()
+  const { character } = useMarvelContext()
 
-    const searchCharacters = allCharacters.filter((item) => item.name.toLowerCase().includes(location.state.toLowerCase()))
-    console.log(searchCharacters)
+  const searchCharacters = character.filter((item) => item.name.toLowerCase().includes(location.state.toLowerCase()))
+
 
 
   return (
     <>
 
-        {searchCharacters.map((item) => (
-            <article>
-                <p>{item.name}</p>
-            </article>
-        ))}
+      <Navbar />
+      {searchCharacters.map((item) => (
+        <article key={item.id}>
+          <p>{item.name}</p>
+          <img className='w-[150px]' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Character" />
+        </article>
+      ))}
 
-        <p>Hola</p>
-    
-    
+
+
+
     </>
   )
 }
