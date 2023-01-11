@@ -42,11 +42,11 @@ const CharacterPage = () => {
         {
           character.map((item) => (
 
-            <article key={item.id}>
-              <div className='flex flex-col items-center'>
+            <article className='flex flex-col items-center' key={item.id}>
+              
                 <h1 className='text-5xl'>{item.name}</h1>
-                <img className='pt-2 w-[350px] h-[350px] rounded-xl ' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="" />
-              </div>
+                <img className='pt-2 w-[350px] h-[350px] rounded-[250px] object-cover' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="" />
+             
             </article>
           ))
         }

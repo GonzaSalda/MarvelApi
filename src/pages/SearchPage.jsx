@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar'
 import { useMarvelContext } from '../context/MarvelContext'
+import '../components/CharacterCard/index.css'
 
 const SearchPage = () => {
 
@@ -23,12 +24,12 @@ const SearchPage = () => {
       {
         character.length !== 0 ?
 
-          <div className='flex gap-10'>
+          <div className='flex gap-10 justify-around flex-wrap px-2'>
             
             { searchCharacters.map((item) => (
-            <Link to={`/character/${item.id}`} key={item.id}>
-              <p>{item.name}</p>
-              <img className='w-[150px]' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Character" />
+            <Link className='card flex flex-col' to={`/character/${item.id}`} key={item.id}>
+              <p className='self-center my-4 text-white font-semibold'>{item.name}</p>
+              <img className='w-[150px] self-center rounded-[150px] object-cover' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Character" />
             </Link>
             ))}
           </div>

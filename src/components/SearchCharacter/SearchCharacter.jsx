@@ -38,7 +38,7 @@ const SearchCharacter = () => {
 
 
             <form className="inputGroup" onSubmit={handleSubmit}>
-                <input placeholder="Enter your text..." className="input"  value={searchValue} onChange={handleChange} type="text"></input>
+                <input placeholder="Search character" className="input"  value={searchValue} onChange={handleChange} type="text"></input>
             </form>
 
 

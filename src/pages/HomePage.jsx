@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
-import CharacterList from '../components/CharacterList'
+import CharacterList from '../components/CharacterList/CharacterList'
 import LoadMoreButton from '../components/LoadMoreButton/LoadMoreButton'
 
 const PageHome = () => {
