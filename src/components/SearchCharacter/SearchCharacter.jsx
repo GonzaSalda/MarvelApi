@@ -5,7 +5,7 @@ import './index.css'
 
 const SearchCharacter = () => {
 
-    const { character, setCharacter } = useMarvelContext()
+    const { character, setCharacter, /* getCharacterByNameInHome */ } = useMarvelContext()
 
 
     const [searchValue, setSearchValue] = useState("")
@@ -29,7 +29,11 @@ const SearchCharacter = () => {
         setSearchValue(e.target.value)
         console.log(e.target)
     }
-    console.log(character)
+
+
+/*     const handleChange2 = (e) =>{
+        getCharacterByNameInHome(e.target.value)
+    }  ARREGLARRRRRRRRRRRRRRR*/
 
 
 
@@ -41,7 +45,7 @@ const SearchCharacter = () => {
                 <input placeholder="Search character" className="input"  value={searchValue} onChange={handleChange} type="text"></input>
             </form>
 
-
+        {/*     <input placeholder="Search character here" className="input" onChange={handleChange2} type="text"></input> ARREGLARRRRRRRRRR */}
 
         </>
     )
