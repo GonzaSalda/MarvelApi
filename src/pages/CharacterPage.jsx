@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useMarvelContext } from '../context/MarvelContext'
 import { useParams } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/Navbar'
 
 const CharacterPage = () => {
 

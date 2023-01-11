@@ -1,6 +1,6 @@
 import React from 'react'
 import { useMarvelContext } from '../context/MarvelContext'
-import CharacterCard from './CharacterCard'
+import CharacterCard from './CharacterCard/CharacterCard'
 
 const CharacterList = () => {
 

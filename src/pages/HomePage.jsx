@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/Navbar'
 import CharacterList from '../components/CharacterList'
-import LoadMoreButton from '../components/LoadMoreButton'
+import LoadMoreButton from '../components/LoadMoreButton/LoadMoreButton'
 
 const PageHome = () => {
   return (

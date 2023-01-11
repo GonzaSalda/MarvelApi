@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useMarvelContext } from '../context/MarvelContext'
-
-
+import { useMarvelContext } from '../../context/MarvelContext'
+import './index.css'
 
 const SearchCharacter = () => {
 
-    const{character, setCharacter} = useMarvelContext()
+    const { character, setCharacter } = useMarvelContext()
 
 
     const [searchValue, setSearchValue] = useState("")
@@ -17,12 +16,11 @@ const SearchCharacter = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-
         const res = await fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${searchValue}&ts=1&apikey=a2ec1eb0260a01135217a79e162f91bc&hash=a31607d9e345cb95954fab9b7de03f67`)
         const data = await res.json()
         setCharacter(data.data.results)
-
         navigate('/search', { state: searchValue })
+
 
     }
 
@@ -39,9 +37,10 @@ const SearchCharacter = () => {
         <>
 
 
-            <form onSubmit={handleSubmit}>
-                <input className='bg-white rounded-md px-4' type="text" value={searchValue} placeholder='Search character' onChange={handleChange} />
+            <form className="inputGroup" onSubmit={handleSubmit}>
+                <input placeholder="Enter your text..." className="input"  value={searchValue} onChange={handleChange} type="text"></input>
             </form>
+
 
 
         </>

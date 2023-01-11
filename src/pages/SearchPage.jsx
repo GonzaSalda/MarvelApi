@@ -1,6 +1,6 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import { Link, useLocation } from 'react-router-dom'
+import Navbar from '../components/Navbar/Navbar'
 import { useMarvelContext } from '../context/MarvelContext'
 
 const SearchPage = () => {
@@ -17,15 +17,29 @@ const SearchPage = () => {
     <>
 
       <Navbar />
-      {searchCharacters.map((item) => (
-        <article key={item.id}>
-          <p>{item.name}</p>
-          <img className='w-[150px]' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Character" />
-        </article>
-      ))}
 
 
 
+      {
+        character.length !== 0 ?
+
+          <div className='flex gap-10'>
+            
+            { searchCharacters.map((item) => (
+            <Link to={`/character/${item.id}`} key={item.id}>
+              <p>{item.name}</p>
+              <img className='w-[150px]' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Character" />
+            </Link>
+            ))}
+          </div>
+          :
+          <div className='flex justify-center items-center h-96'>
+             <p className='text-5xl font-semibold '>No existe ese personaje</p>
+          </div>
+         
+
+
+      }
 
     </>
   )
