@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <>
 
-      <div className="nav  w-full py-4 rounded-xl mb-12 flex justify-between pr-5">
-        <Link to={"/"} className="px-6 text-white font-semibold text-xl mt-1">Home</Link>
+      <div className="nav  w-full py-4 rounded-xl md:mb-6 flex justify-between pr-5">
+        <Link to={"/"} className="px-6 text-red-400 font-bold text-2xl mt-1">Home</Link>
         <SearchCharacter/>
       </div>
 

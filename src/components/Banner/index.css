@@ -1,0 +1,42 @@
+.container {
+min-height: 500px;
+position: relative;
+min-width: 100%;
+}
+
+.container-img {
+position: absolute;
+width: 230px;
+height: 100%;
+background: #151821;
+right: 0;
+
+border-top-left-radius:35px;
+border-bottom-left-radius:35px;
+
+}
+
+.container .loki{
+position: absolute;
+object-fit: contain;
+width: 350px;
+height: 520px;
+top: -10%;
+right: 5%;
+animation:2s img-loki  0.5s ease-in-out;
+transition: all 1s ease;
+}
+
+.loki:hover{
+    width: 380px;
+    height: 550px;
+}
+
+@keyframes img-loki{
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
