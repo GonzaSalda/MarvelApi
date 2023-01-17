@@ -8,7 +8,7 @@ const LoadMoreButton = () => {
     <>
 
   <div className='flex justify-center w-full mb-6'>
-    <button className='bg-[#212121]' onClick={loadMoreCharacters}><span>Load More</span></button>
+    <button className='btn  bg-[#F6F9FE] text-gray-500 drop-shadow-md	w-auto h-9 px-2 rounded-full font-semibold hover:translate-y-[-1px]' onClick={loadMoreCharacters}><span>Load More</span></button>
   </div>
     
     </>

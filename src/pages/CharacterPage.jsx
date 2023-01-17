@@ -3,6 +3,7 @@ import { useMarvelContext } from '../context/MarvelContext'
 import { useParams } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar'
 
+
 const CharacterPage = () => {
 
 
@@ -20,6 +21,7 @@ const CharacterPage = () => {
 
   useEffect(() => {
     fetchCharacter(id)
+    console.log(character)
   }, [])
 
   const fetchCharacterComics = async (id) => {
@@ -70,7 +72,7 @@ const CharacterPage = () => {
 
 
             <div div className='flex justify-center w-full'>
-              <button onClick={loadMoreComics} className='w-auto p-2 text-white font-semibold my-5 rounded-xl bg-blue-900'>LoadMore</button>
+            <button className='btn bg-[#F6F9FE] text-gray-500 drop-shadow-md w-auto h-9 my-8 px-2 rounded-full font-semibold hover:translate-y-[-1px]' onClick={loadMoreComics}><span>Load More</span></button>
             </div>
 
 

@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useMarvelContext } from '../../context/MarvelContext'
 import './index.css'
 const Banner = () => {
 
   return (
     <>
 
-      <div class="container mb-2 md:mb-12 flex ">
+      <div className="container mb-2 md:mb-12 flex ">
 
         <div className='flex-1 max-h-[300px] my-auto md:mx-16'>
           <h1 className='text-4xl font-semibold text-red-400 mb-10 mx-4'>Explore all the Marvel's characters </h1>

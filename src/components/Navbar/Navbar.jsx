@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import SearchCharacter from '../SearchCharacter/SearchCharacter.jsx'
-import './index.css'
 
 
 const Navbar = () => {

@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useMarvelContext } from '../../context/MarvelContext'
-import './index.css'
 
 const SearchCharacter = () => {
 
-    const { character, setCharacter, /* getCharacterByNameInHome */ } = useMarvelContext()
+    const { setCharacter } = useMarvelContext()
 
 
     const [searchValue, setSearchValue] = useState("")
@@ -20,33 +19,22 @@ const SearchCharacter = () => {
         const data = await res.json()
         setCharacter(data.data.results)
         navigate('/search', { state: searchValue })
-
-
     }
 
 
     const handleChange = (e) => {
         setSearchValue(e.target.value)
-        console.log(e.target)
     }
-
-
-/*     const handleChange2 = (e) =>{
-        getCharacterByNameInHome(e.target.value)
-    }  ARREGLARRRRRRRRRRRRRRR*/
-
 
 
     return (
         <>
 
 
-            <form className="inputGroup" onSubmit={handleSubmit}>
-                <input placeholder="Search character" className="input"  value={searchValue} onChange={handleChange} type="text"></input>
+            <form onSubmit={handleSubmit}>
+                <input placeholder="Search character" className="h-[36px] rounded-xl text-start px-2 focus:outline-none bg-slate-100 
+                drop-shadow-md text-gray-500"  value={searchValue} onChange={handleChange} type="text"></input>
             </form>
-
-        {/*     <input placeholder="Search character here" className="input" onChange={handleChange2} type="text"></input> ARREGLARRRRRRRRRR */}
-
         </>
     )
 }
