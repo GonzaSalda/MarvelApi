@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import SearchCharacter from '../SearchCharacter/SearchCharacter.jsx'
-import Home from '/images/marvelicon.png'
+import Home from '../../assets/images/marvel.jpg'
 
 const Navbar = () => {
 
