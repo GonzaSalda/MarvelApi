@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <>
       <div className=" container h-screen mx-auto mb-20 relative flex  ">
-        <div className="flex-1 max-h-[300px] max-w-[420px] my-auto md:mx-16 relative z-10">
+        <div className="flex-1 max-h-[300px] max-w-[420px] my-auto mx-8 md:mx-16 relative z-10">
           <h1 className="text-3xl uppercase font-semibold  mb-4">
             Explora todos los{" "}
             <span className="text-[#AC3433] text-4xl">personajes de Marvel</span>
@@ -14,7 +14,7 @@ const Banner = () => {
           <p className="text-sm font-semibold">
             Mira ahora la nueva temporada de Loki, desde disney plus!
           </p>
-          <a href="https://www.disneyplus.com/es-ar/series/loki/6pARMvILBGzF" className="inline-flex self-start cursor-pointer rounded-2xl bg-[#AC3433] text-white p-2 text-sm" target="_blank" >Mirar ahora</a>
+          <a href="https://www.disneyplus.com/es-ar/series/loki/6pARMvILBGzF" className="inline-flex self-center md:self-start cursor-pointer rounded-2xl bg-[#AC3433] text-white p-2 text-sm" target="_blank" >Mirar ahora</a>
           </div>
           
         </div>
