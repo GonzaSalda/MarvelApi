@@ -11,7 +11,7 @@ const MarvelProvider = ({ children }) => {
   const [filtered, setFiltered] = useState([])
 
   const getAllCharactersList = async () => {
-    const res = await fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=14&offset=${offSet}&ts=1&apikey=a2ec1eb0260a01135217a79e162f91bc&hash=a31607d9e345cb95954fab9b7de03f67`)
+    const res = await fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=12&offset=${offSet}&ts=1&apikey=a2ec1eb0260a01135217a79e162f91bc&hash=a31607d9e345cb95954fab9b7de03f67`)
     const data = await res.json()
     setAllCharactersList([...allCharactersList, ...data.data.results])
   }

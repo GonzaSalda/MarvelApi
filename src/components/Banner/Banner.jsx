@@ -6,10 +6,10 @@ const Banner = () => {
   return (
     <>
 
-      <div className="container mb-2 md:mb-12 flex ">
+      <div className="container mb-2 md:my-24 flex ">
 
         <div className='flex-1 max-h-[300px] my-auto md:mx-16'>
-          <h1 className='text-4xl font-semibold text-red-400 mb-10 mx-4'>Explore all the Marvel's characters </h1>
+          <h1 className='text-4xl font-semibold text-red-400 mb-10 mx-4'>Explora todos los personajes de Marvel </h1>
           <p className='max-w-[450px] text-base font-semibold mx-6 '>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit exercitationem fugit omnis est dolore sint ex, voluptatibus a eos quos! Delectus, repellendus.</p>
         </div>
 
