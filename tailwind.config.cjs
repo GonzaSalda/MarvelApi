@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        bgLoki: "url('./assets/images/loki2.jpg')",
+      }
+    },
   },
   plugins: [],
 }

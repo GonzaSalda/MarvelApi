@@ -8,7 +8,7 @@ min-width: 100%;
 position: absolute;
 width: 230px;
 height: 100%;
-background: #151821;
+background: #333746;
 right: 0;
 
 border-top-left-radius:35px;
@@ -21,7 +21,7 @@ position: absolute;
 object-fit: contain;
 width: 350px;
 height: 520px;
-top: -10%;
+bottom: 10%;
 right: 5%;
 animation:2s img-loki  0.5s ease-in-out;
 transition: all 1s ease;

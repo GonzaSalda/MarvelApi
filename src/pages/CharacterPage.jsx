@@ -60,8 +60,8 @@ const CharacterPage = () => {
         {
           comics.map((item) => (
             <>
-              <div className='grid grid-cols-[250px] grid-rows-[80px_1fr] mb-20 items-center' key={item.title}>
-                <p className='font-semibold text-lg '>{item.title}</p>
+              <div className='grid grid-cols-[250px] grid-rows-[80px_1fr] mb-20 items-center justify-items-center' key={item.title}>
+                <p className='font-semibold text-sm'>{item.title}</p>
                 <img className='w-[150px] object-cover' src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="" />
               </div>
             </>

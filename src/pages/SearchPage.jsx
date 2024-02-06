@@ -24,7 +24,7 @@ const SearchPage = () => {
       {
         character.length !== 0 ?
 
-          <div className='flex gap-10 justify-around flex-wrap px-2'>
+          <div className='h-screen flex gap-10 justify-around flex-wrap px-2 items-center '>
 
             {searchCharacters.map((item) => (
               <Link key={item.id} className='card' to={`/character/${item.id}`}>

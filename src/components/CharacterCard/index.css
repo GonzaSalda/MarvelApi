@@ -22,11 +22,11 @@
 }
 
 .card-front{
-    background: #F1F5F9;
+    background: #ffffff6b;
 }
 
 .card-back{
-    background: #F1F5F9;
+    background: #ffffff6b;
     transform: rotateY(180deg);
 }
    

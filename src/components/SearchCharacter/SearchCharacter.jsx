@@ -32,8 +32,8 @@ const SearchCharacter = () => {
 
 
             <form onSubmit={handleSubmit}>
-                <input placeholder="Search character" className="h-[36px] rounded-xl text-start px-2 focus:outline-none bg-slate-100 
-                drop-shadow-md text-gray-500"  value={searchValue} onChange={handleChange} type="text"></input>
+                <input placeholder="Search character" className="h-[36px] rounded-xl text-center px-2 focus:outline-none bg-[#EEEDED] 
+                drop-shadow-md text-gray-600"  value={searchValue} onChange={handleChange} type="text"></input>
             </form>
         </>
     )
